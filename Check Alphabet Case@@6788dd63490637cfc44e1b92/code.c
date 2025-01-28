@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int alpha;
+    char alpha;
     scanf("%c",&alpha);
     if(alpha>=A and alpha<=Z)
         printf("Uppercase");
