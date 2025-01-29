@@ -3,7 +3,7 @@
 int main(){
     int a,b,n;
     scanf("%d %d",&a,&b);
-    if(a& (n-1)<<31 && b& (n-1)<<31)
+    if(a& 1<<(n-31) && b& 1<<(n-31))
         printf("0");
     else 
         printf("1");
