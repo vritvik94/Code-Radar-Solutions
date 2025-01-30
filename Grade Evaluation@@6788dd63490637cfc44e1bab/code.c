@@ -14,6 +14,6 @@ int main(){
     else if(m=='F')
         printf("Fail");
     else
-        printf("Invalid");
+        printf("Invalid Grade");
     return 0;
 }
