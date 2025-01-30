@@ -16,10 +16,10 @@ int main(){
             printf("%d"a*b);
             break;
         case '/':
-        if(b!=0){
-            printf("%d",a/b);
+        if(b!=0)
+        {   printf("%d",a/b);
+            break;
         }
-        break;
         default:
             printf("Error");
             break;
