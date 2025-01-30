@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    char m;
-    scanf("%c",&m);
+    int m;
+    scanf("%d",&m);
     if(m=='A')
         printf("Excellent");
     else if(m=='B');
