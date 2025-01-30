@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    int m;
-    scanf("%d",&m);
+    char m;
+    scanf("%c",&m);
     if(m=='A')
         printf("Excellent");
-    else if(m=='B');
+    else if(m=='B')
         printf("Good");
     else if(m=='C')
         printf("Average");
