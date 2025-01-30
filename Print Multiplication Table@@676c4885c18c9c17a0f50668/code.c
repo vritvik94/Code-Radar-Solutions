@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    int i,n,prod;
+    int i,n;
     scanf("%d",&n);
     for(i=1;i<11;i++)
     {
-        prod=i * n;
-        printf("%d * %d = %d",n,i,prod);
+        printf("%d * %d = %d", n , i , i * n);
     }
     return 0;
 }
