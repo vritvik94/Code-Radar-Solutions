@@ -6,7 +6,7 @@ int main(){
     {
         scanf("%d",&n);
         p=i*n;
-        printf("%d * %d = %d\n",n,i,p);
+        printf("%d 'x %d = %d\n",n,i,p);
     }
     return 0;
 }
