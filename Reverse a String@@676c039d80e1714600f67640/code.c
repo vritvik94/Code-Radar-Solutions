@@ -3,7 +3,7 @@
 int main(){
     char[20],temp;
     int l,i,j;
-    scanf("%s",a)
+    scanf("%s",l)
     gets(a);
     for(l=0;a[l]!=0;l++);
     j=l-1;
