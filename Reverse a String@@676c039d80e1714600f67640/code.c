@@ -1,19 +1,11 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
-    char[20],temp;
-    int l,i,j;
-    scanf("%s",l)
-    gets(a);
-    for(l=0;a[l]!=0;l++);
-    j=l-1;
-    for(i=0;i<l/2;i++)
-    {
-        temp=a[i];
-        a[i]=a[j];
-        a[i]=temp;
-        j--;
-    }
-    printf("%s",a)
+    char a[20];
+    int l;
+    l=strlen(a);
+    strrev(a);
+    printf("%s",a);
     return 0;
 }
