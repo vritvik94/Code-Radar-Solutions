@@ -6,7 +6,7 @@ int main(){
     int a[i];
     for(j=2;j<=a[i]/2;j++)
     {
-        if(a[i]%2==0)
+        if(a[i]%j==0)
         {
             ctr++;
             break;
