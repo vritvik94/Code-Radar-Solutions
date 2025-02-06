@@ -6,13 +6,13 @@ int main(){
     int a[i];
     for(j=2;j<=a[i]/2;j++)
     {
-        if(a[i]%j==0)
+        if(a[j]%j==0)
         {
             ctr++;
             break;
         }
         if(ctr==0)
-            printf("%d",a[i]);
+            printf("%d",a[j]);
         return 0;
     }
 }
