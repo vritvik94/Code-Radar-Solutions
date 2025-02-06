@@ -12,7 +12,7 @@ int main(){
             break;
         }
         if(ctr==0)
-            printf("%d",a[i]);
+            printf("%d ",a[i]);
         return 0;
     }
 }
