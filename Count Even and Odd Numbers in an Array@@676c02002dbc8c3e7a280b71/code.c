@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    int i,a[i];
+    int i,a[i],odd,even;
     scanf("%d",&i);
     for(int j=0;j<i;j++)
     {
-        odd=0;
-        even=0;
         scanf("%d",&(a[j]));
         if(a[j]%2==0)
             even++;
