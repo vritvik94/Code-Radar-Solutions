@@ -14,7 +14,7 @@ int main(){
         if(a[i]<min)
             min=a[i];
     }
-    printf("%d",\nmax);
-    printf("%d",\nmin);
+    printf("%d ",max);
+    printf("%d ",min);
     return 0;
 }
