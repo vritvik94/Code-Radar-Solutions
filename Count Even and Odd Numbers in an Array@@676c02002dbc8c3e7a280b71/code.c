@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&i);
     for(int j=0;j<i;j++)
     {
-        scanf("%d",&a[j]);
+        scanf("%d",&(a[j]));
         if(a[j]%2==0)
             even++;
         else
