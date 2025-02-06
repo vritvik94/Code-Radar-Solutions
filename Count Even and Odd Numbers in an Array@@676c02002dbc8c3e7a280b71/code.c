@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int i,a[i],odd,even;
+    int i,odd=0,even=0;
     scanf("%d",&i);
+    int a[i];
     for(int j=0;j<i;j++)
     {
         scanf("%d",&(a[j]));
