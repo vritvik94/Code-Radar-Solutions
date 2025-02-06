@@ -2,8 +2,7 @@
 
 int main(){
     int a[100],i,n,odd,even;
-    scanf("%d",&n)
-    for(i=0;i<n;i++)
+    for(i=0;i<a[i];i++)
     {
         scanf("%d",&a[i]);
         if(a[i]%2==0)
