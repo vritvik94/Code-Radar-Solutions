@@ -16,6 +16,6 @@ int main(){
         if(ctr==0)
             printf("%d",a[i]);
         }
-        return 0;
     }
+    return 0;
 }
