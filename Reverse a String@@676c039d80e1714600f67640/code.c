@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(){
-    char a[i];
+    char a[100];
     int l;
     l=strlen(a);
     strrev(a);
