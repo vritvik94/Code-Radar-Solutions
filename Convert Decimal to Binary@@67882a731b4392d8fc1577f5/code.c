@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main(){
-    int i,n;
+    int d,n,result;
     scanf("%d",&n);
-    for(i=31;i>=0;i--)
+    for(d=31;d>=0;d--)
     {
-        printf("%d",(n>>i) & 1);
+        result=n >> d;
+        if(result & 1)
+            printf("%d",result);
     }
-    printf("\n");
     return 0;
 }
