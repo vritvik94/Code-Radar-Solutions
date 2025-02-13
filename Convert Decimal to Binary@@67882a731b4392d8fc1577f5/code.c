@@ -7,7 +7,7 @@ int main(){
     {
         result=n >> d;
         if(result & 1)
-            printf("%d",result);
+            printf("%d ",result);
     }
     printf("\n");
     return 0;
