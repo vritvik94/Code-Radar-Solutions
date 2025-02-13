@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int d,n,result;
+    int i,n,flag;
     scanf("%d",&n);
-    for(d=31;d>=0;d--)
+    for(i=31;i>=0;i--)
     {
-        result=n >> d;
-        if(result & 1)
-            printf("%d ",result);
+        if(n&(1<<i))
+            flag=1;
+        if(flag)
+            printf("%d",(n&(1<<i))?1:0);
     }
-    printf("\n");
+    if(!flag)
+        printf("0");
     return 0;
 }
