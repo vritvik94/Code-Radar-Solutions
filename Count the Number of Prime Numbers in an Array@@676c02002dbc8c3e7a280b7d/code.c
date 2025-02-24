@@ -13,9 +13,9 @@ int main(){
             ctr++;
             break;
         }
+        }
         if(ctr==0)
             printf("%d ",a[i]);
-        }
     }
     return 0;
 }
