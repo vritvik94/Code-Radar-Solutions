@@ -15,7 +15,7 @@ int main(){
         }
     }
     if(ctr==0)
-        printf("Soreted");
+        printf("Sorted");
     else
         printf("Not Sorted");
     return 0;
