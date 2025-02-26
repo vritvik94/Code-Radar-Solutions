@@ -9,9 +9,9 @@ int main(){
     for(i=0;i<=n-1;i++)
     {
         if(a[i]<=a[i+1])
-            printf("Sorted");
+            printf("\nSorted");
         else
-            printf("Not Sorted");
+            printf("\nNot Sorted");
     }
     return 0;
 }
