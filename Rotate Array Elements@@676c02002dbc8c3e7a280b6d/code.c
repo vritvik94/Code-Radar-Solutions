@@ -11,6 +11,6 @@ int main(){
         a[i]=a[i-1];
     }
     a[0]=temp;
-    printf("\n%d",a[n]);
+    printf("\n%d",a[i]);
     return 0;
 }
