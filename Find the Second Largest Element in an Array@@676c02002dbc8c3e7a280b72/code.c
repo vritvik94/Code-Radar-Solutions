@@ -40,6 +40,7 @@ int main()
         if(a[i]>large)
         {
             large=a[i];
+            second=large;
         }
         else
         {
