@@ -19,6 +19,13 @@ int main()
             }
         }
     }
-    printf("%d",a[n-2]);
+    int large=a[n-1];
+    i=n-2;
+    while(i>=0 && a[i]==large)
+     i--;
+     if(i==-1)
+        printf("-1");
+    else
+        printf("%d",a[i]);
     return 0;
 }
