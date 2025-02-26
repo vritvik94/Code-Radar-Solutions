@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i,n,j,temp;
+   /* int i,n,j,temp;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -26,6 +26,29 @@ int main()
      if(i==-1)
         printf("-1");
     else
-        printf("%d",a[i]);
+        printf("%d",a[i]);*/
+
+    int i,n,j,temp,large,second;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    large=a[0];
+    second=-1;
+    for(i=1;i<n;i++)
+    {
+        if(a[i]>large)
+        {
+            large=a[i];
+        }
+        else
+        {
+            if(a[i]>second && a[i]<large)
+            {
+                second=a[i];
+            }
+        }
+    }
+    printf("%d",second);
     return 0;
 }
