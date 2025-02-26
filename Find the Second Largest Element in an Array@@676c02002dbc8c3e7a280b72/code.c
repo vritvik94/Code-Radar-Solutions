@@ -34,7 +34,7 @@ int main()
     for(i=0;i<n;i++)
         scanf("%d",&a[i]);
     large=a[0];
-    second=-2147483648;
+    second=INT_MIN;
     for(i=1;i<n;i++)
     {
         if(a[i]>large)
