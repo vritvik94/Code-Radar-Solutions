@@ -51,7 +51,7 @@ int main()
             }
         }
     }
-    if(second==-2147483648)
+    if(second==INT_MIN)
         printf("-1");
     else
         printf("%d",second);
