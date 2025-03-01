@@ -1,19 +1,19 @@
 #include<stdio.h>
 
 int main(){
-    int i,num,temp,sum=0,digit;
+    int i,temp,sum=0,digit,n;
     scanf("%d",&num);
     int a[n];
-    for(i=0;i<num;i++)
+    for(i=0;i<n;i++)
     scanf("%d",&a[i]);
     temp=a[i];
     while(a[i]!=0)
     {
-        digit=num%10;
+        digit=n%10;
         sum=sum*10+digit;
-        num=num/10;
+        n=n/10;
     }
-    if(atemp==sum)
+    if(temp==sum)
         printf("YES");
     else
         printf("NO");
