@@ -8,7 +8,7 @@ int main(){
     scanf("%d",&n);
     max=a[0];
     if(max>a[i])
-        a[i]=max;
+        max=a[i];
     printf("%d",a[i]);
     return 0;
 }
