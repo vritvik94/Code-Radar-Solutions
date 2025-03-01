@@ -4,7 +4,7 @@ int main(){
     int i,num,temp,sum=0,digit;
     scanf("%d",&num);
     int a[n];
-    for(i=0;i<n;i++)
+    for(i=0;i<num;i++)
     scanf("%d",&a[i]);
     temp=a[i];
     while(a[i]!=0)
