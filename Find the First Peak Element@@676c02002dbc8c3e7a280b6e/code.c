@@ -9,6 +9,8 @@ int main(){
     max=a[0];
     if(max>a[i])
         max=a[i];
+    else
+        printf("-1");
     printf("%d",a[i]);
     return 0;
 }
