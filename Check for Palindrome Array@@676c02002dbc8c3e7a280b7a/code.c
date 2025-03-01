@@ -2,7 +2,7 @@
 
 int main(){
     int i,temp,sum=0,digit,n;
-    scanf("%d",&num);
+    scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
     scanf("%d",&a[i]);
