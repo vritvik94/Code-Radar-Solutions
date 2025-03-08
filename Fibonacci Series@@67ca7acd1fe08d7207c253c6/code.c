@@ -9,5 +9,5 @@ int fibonacciSeries(n)
         a=b;
         b=c;
     }
-   return b;
+   return a;
 }
