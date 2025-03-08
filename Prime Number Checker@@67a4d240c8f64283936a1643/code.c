@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int prime(int n)
+int isPrime(int n)
 {
     int ctr,i;
     ctr=0;
@@ -16,4 +16,14 @@ int prime(int n)
         printf("1");
     else
         printf("0");
+}
+int main(){
+    int t;
+    scanf("%d",&t);
+    while(t--){
+        int num;
+        scanf("%d",&num);
+        printf("%d\n",isPrime(num));
+    }
+    return 0;
 }
