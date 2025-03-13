@@ -1,33 +1,32 @@
 #include<stdio.h>
 #include<limits.h>
-
 int main(){
-    int i,n,max,smax;
+    int i,n,j,temp,large,second;
     scanf("%d",&n);
-    int arr[n];
+    int a[n];
     for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    large=a[0];
+    second=INT_MIN;
+    for(i=1;i<n;i++)
     {
-        scanf("%d",&arr[i]);
-    }
-
-    max=-1;
-    smax=-1;
-
-    for(i=0;i<n;i++)
-    {
-        if(max<arr[i])
+        if(a[i]>large)
         {
-            max=arr[i];
+            second=large;
+            large=a[i];
+            
+        }
+        else
+        {
+            if(a[i]>second && a[i]<large)
+            {
+                second=a[i];
+            }
         }
     }
-
-    for(i=0;i<n;i++)
-    {
-        if(arr[i]!=max && smax<arr[i])
-        {
-            smax=arr[i];
-        }
-    }
-        printf("%d",smax);
-        return 0;
+    if(second==INT_MIN)
+        printf("-1");
+    else
+        printf("%d",second);
+    return 0;
 }
