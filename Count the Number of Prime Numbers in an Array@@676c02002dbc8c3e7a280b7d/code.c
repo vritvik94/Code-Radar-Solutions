@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int i,n,ctr;
+    int i,n,ctr=0;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    ctr=0;
+    //ctr=0;
     for(i=2;i<n/2;i++)
     {
         if(arr[i]%n==0)
