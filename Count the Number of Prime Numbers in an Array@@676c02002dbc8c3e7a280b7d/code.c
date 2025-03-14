@@ -7,16 +7,17 @@ int main(){
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
-    }
 
-    for(i=2;i<=n/2;i++)
+    for(j=2;j<=n/2;j++)
     {
-        if(arr[i]%n==0)
+        if(arr[j]%n==0)
         {
             ctr++;
             break;
         }
     }
+    }
+    
         printf("%d",ctr);
     return 0;
 }
