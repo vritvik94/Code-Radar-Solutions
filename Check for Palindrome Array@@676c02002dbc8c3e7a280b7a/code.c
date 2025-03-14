@@ -1,19 +1,23 @@
 #include<stdio.h>
 
 int main(){
-    int i,temp,sum=0,digit,n;
+    int i,n,isPallindrome;
     scanf("%d",&n);
-    int a[n];
+    int arr[n];
     for(i=0;i<n;i++)
-    scanf("%d",&a[i]);
-    temp=a[i];
-    while(a[i]!=0)
     {
-        digit=n%10;
-        sum=sum*10+digit;
-        n=n/10;
+        scanf("%d",&arr[i]);
     }
-    if(temp==sum)
+
+    for(i=0;i<n/2;i++)
+    {
+        if(arr[i]!=arr[n-1-i])
+        {
+            isPallindrome=0;
+            break;
+        }
+    }
+    if(isPallindrome)
         printf("YES");
     else
         printf("NO");
