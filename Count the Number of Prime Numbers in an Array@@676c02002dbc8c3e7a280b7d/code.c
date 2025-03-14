@@ -17,7 +17,7 @@ int main(){
         }
     }
     }
-
+    if(ctr==0)
         printf("%d",ctr);
     return 0;
 }
