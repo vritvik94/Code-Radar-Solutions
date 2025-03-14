@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    int i,n,isPallindrome;
+    int i,n,isPallindrome=1;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
