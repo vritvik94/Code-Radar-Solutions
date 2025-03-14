@@ -13,7 +13,7 @@ int main(){
     {
         if(arr[i]%n==0)
         {
-            ctr=1;
+            ctr++;
             break;
         }
     }
