@@ -3,14 +3,12 @@
 int main(){
     int i,n,max;
     scanf("%d",&n);
-    int a[n];
+    int arr[n];
     for(i=0;i<n;i++)
-    scanf("%d",&n);
-    max=a[0];
-    if(max>a[i])
-        max=a[i];
+    scanf("%d",&arr[i]);
+    if(arr[i]>arr[i+1])
+        printf("%d",arr[i]);
     else
         printf("-1");
-    printf("%d",a[i]);
     return 0;
 }
