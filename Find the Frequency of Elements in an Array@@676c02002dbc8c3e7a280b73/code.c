@@ -20,7 +20,7 @@ int main(){
             ctr++;
             arr[j]=-1;
         }
-        printf("%d %d",arr[i],ctr);
     }
+        printf("%d %d\n",arr[i],ctr);
     return 0;
 }
