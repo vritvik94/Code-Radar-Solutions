@@ -19,7 +19,7 @@ int main(){
     }
     if(i==n-1)
     {
-        if(a[i]>a[i-1])
+        if(arr[i]>arr[i-1])
         {
             printf("%d",a[i]);
             return 0;
