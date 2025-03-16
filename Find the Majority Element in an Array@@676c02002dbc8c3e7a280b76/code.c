@@ -16,7 +16,7 @@ int main(){
             if(arr[i]==arr[j])
             ctr++;
         }
-    if(ctr>=n/2)
+    if(ctr>n/2)
     {
         m=arr[i];
         printf("%d",m);
