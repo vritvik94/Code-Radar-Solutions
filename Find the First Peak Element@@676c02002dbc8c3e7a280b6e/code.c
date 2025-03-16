@@ -8,15 +8,23 @@ int main(){
     {
         scanf("%d",&arr[i]);
     }
+    
     for(i=1;i<n-1;i++)
     {
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1])
         {
          printf("%d",arr[i]);
-         return 0;
+            return 0;     
         }
     }
-    
-        printf("-1");    
+    if(i==n-1)
+    {
+        if(a[i]>a[i-1])
+        {
+            printf("%d",a[i]);
+            return 0;
+        }
+    }
+    printf("-1");    
     return 0;
 }
