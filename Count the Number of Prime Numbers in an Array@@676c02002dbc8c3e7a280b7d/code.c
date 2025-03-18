@@ -12,6 +12,8 @@ int main(){
     for(i=0;i<n;i++)
     {
         ctr=0;
+        if(arr[i]<2)
+            continue;
         for(j=2;j<=arr[i]/2;j++)
         {
             if(arr[i]%j==0)
