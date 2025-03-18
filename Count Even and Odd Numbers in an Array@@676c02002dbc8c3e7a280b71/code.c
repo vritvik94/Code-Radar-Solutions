@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(){
-    int i,odd=0,even=0;
-    scanf("%d",&i);
-    int a[i];
-    for(int j=0;j<i;j++)
+    int i,n,odd=0,even=0;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<i;i++)
     {
-        scanf("%d",&(a[j]));
-        if(a[j]%2==0)
+        scanf("%d",&arr[i]);
+        if(arr[i]%2==0)
             even++;
         else
             odd++;
