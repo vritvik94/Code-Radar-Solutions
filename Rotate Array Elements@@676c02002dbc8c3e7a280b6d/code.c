@@ -8,18 +8,17 @@ int main(){
     {
         scanf("%d",&arr[i]);
     }
-    
+
     scanf("%d",&k);
     k=k%n;
 
-    for(i=0;i<n;i++)
+    for (i = n - k; i < n; i++) 
     {
-        temp[(i+k)%n]=arr[i];
+        printf("%d\n", arr[i]);
     }
-
-    for(i=0;i<n;i++)
+    for (i = 0; i < n - k; i++) 
     {
-        printf("%d\n",temp[i]);
+        printf("%d\n", arr[i]);
     }
     return 0;
 }
