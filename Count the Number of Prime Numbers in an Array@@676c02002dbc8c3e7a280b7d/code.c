@@ -22,9 +22,9 @@ int main(){
                 break;
             }
         }
-    }
     if(ctr==0)
         prime++;
+    }
     printf("%d",prime);
     return 0;
 }
