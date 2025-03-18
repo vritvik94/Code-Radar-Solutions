@@ -11,7 +11,7 @@ int main(){
 
     for(i=0;i<n;i++)
     {
-        if(arr[j]!=0)
+        if(arr[i]!=0)
         {
             arr[j++]=arr[i];
         }
@@ -20,7 +20,7 @@ int main(){
         arr[j++]=0;
     }
     }
-    
+
     for(i=0;i<n;i++)
     {
         printf("%d ",arr[i]);
