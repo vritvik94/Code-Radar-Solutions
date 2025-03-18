@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main(){
-    int i,n,ctr,j,prime=0;
+    int i,j,n,ctr,prime=0;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
@@ -21,10 +21,10 @@ int main(){
                 ctr++;
                 break;
             }
-            if(ctr==0)
-                prime++;
         }
     }
+    if(ctr==0)
+        prime++;
     printf("%d",prime);
     return 0;
 }
