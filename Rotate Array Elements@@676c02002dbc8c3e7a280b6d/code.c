@@ -1,25 +1,23 @@
 #include<stdio.h>
 
 int main(){
-    int i,n,k,temp,j;
+    int i,n,k;
     scanf("%d",&n);
-    int a[n];
+    int arr[n],temp[n];
     for(i=0;i<n;i++)
-        scanf("%d",&a[i]);
-    
-    scanf("%d",&k);
-
-    for(j=1;j<=k;j++)
     {
-    temp=a[n-1];
-    for(i=n-1;i>=1;i--)
-    {
-        a[i]=a[i-1];
+        scanf("%d",&arr[i]);
     }
-    a[0]=temp;
+
+    k=k%n;
+    for(i=0;i<n;i++)
+    {
+        temp[(i+k)%n]=arr[i];
     }
 
     for(i=0;i<n;i++)
-        printf("%d\n",a[i]);
+    {
+        printf("%d",arr[i]);
+    }
     return 0;
 }
