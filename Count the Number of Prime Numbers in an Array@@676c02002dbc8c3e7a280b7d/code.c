@@ -1,23 +1,26 @@
 #include <stdio.h>
 
 int main(){
-    int i,n,ctr=0;
+    int i,n;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
+    }
 
-    for(int j=2;j<=n/2;j++)
+    for(i=0;i<n;i++)
     {
-        if(arr[j]%n==0)
+        for(i=2;i<=n/2;i++)
         {
-            ctr++;
-            break;
+            if(arr[i]%i==0)
+            {
+                ctr++;
+                break;
+            }
         }
     }
-    }
-
+    if(ctr==0)
         printf("%d",ctr);
     return 0;
 }
