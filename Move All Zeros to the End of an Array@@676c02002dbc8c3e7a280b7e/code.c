@@ -15,10 +15,10 @@ int main(){
         {
             arr[j++]=arr[i];
         }
-    }
     while(j<n)
     {
         arr[j++]=0;
+    }
     }
     
     for(i=0;i<n;i++)
