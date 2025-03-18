@@ -11,15 +11,7 @@ int main(){
     
     for(i=1;i<n-1;i++)
     {
-        if(arr[i]>arr[i-1] && arr[i]>arr[i+1])
-        {
-         printf("%d",arr[i]);
-            return 0;     
-        }
-    }
-    if(i==n-1)
-    {
-        if(arr[i]>arr[i-1])
+        if((i==0 || arr[i]>arr[i-1] && (i=n-1 || arr[i]>arr[i+1])))
         {
             printf("%d",arr[i]);
             return 0;
