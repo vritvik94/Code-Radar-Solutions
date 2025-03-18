@@ -8,8 +8,10 @@ int main(){
     {
         scanf("%d",&arr[i]);
     }
-
+    
+    scanf("%d",&k);
     k=k%n;
+
     for(i=0;i<n;i++)
     {
         temp[(i+k)%n]=arr[i];
