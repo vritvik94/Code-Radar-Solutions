@@ -30,5 +30,6 @@ int main(){
         max=product1;
     else
         max=product2;
+    printf("%d",max);
     return 0;
 }
