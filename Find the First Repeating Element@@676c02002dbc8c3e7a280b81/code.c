@@ -9,18 +9,16 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int ctr=0;
     for(i=0;i<n;i++)
     {
         for(j=i+1;j<n;j++)
         {
-            if(arr[i]=arr[j])
+            if(arr[i]==arr[j])
             {
-                ctr++;
+                printf("%d",arr[i]);
+                return 0;
             }
         }
-        printf("%d",ctr);
-        return 0;
     }
     printf("-1");
     return 0;
