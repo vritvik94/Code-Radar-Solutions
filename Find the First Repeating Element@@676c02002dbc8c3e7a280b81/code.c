@@ -10,7 +10,7 @@ int main(){
     }
 
     int ctr=0;
-    for(i=0i<n;i++)
+    for(i=0;i<n;i++)
     {
         for(j=i+1;j<n;j++)
         {
