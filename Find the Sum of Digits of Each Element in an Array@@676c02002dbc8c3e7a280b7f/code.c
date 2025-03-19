@@ -3,7 +3,7 @@
 int main(){
     int i,n,digit;
     scanf("%d",&n);
-    int arr[n];
+    int arr[n],sumArr[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
@@ -18,7 +18,12 @@ int main(){
             sum=sum+digit;
             num=num%10;
         }
-        printf("%d ",sum);
+        sumArr[i]=sum;
+    }
+    
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",sumArr[i]);
     }
     return 0;
 }
