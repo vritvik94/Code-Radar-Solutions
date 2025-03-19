@@ -9,20 +9,20 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    arr[n-1]=-1;
+    int max=-1;
 
     for(i=n-1;i>=0;i--)
     {
         int temp=arr[i];
-        arr[i]=arr[n-1];
-        if(temp>arr[n-1])
+        arr[i]=max;
+        if(temp>max)
         {
-            arr[n-1]=temp;
+            max=temp;
         }
     }
     for(i=0;i<n;i++)
     {
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     return 0;
 }
