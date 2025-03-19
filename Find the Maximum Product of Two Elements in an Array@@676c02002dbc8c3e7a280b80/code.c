@@ -25,6 +25,7 @@ int main(){
     int product1=arr[n-1]*arr[n-2];
     int product2=arr[0]*arr[1];
 
+    int max;
     if(product1>product2)
         max=product1;
     else
