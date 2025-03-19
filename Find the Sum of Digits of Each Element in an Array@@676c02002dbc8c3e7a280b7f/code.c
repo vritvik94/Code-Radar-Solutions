@@ -12,7 +12,7 @@ int main(){
     for(i=0;i<n;i++)
     {
         int num=arr[i],sum=0;
-        while(num>0)
+        while(num!=0)
         {
             digit=num%10;
             sum=sum+digit;
