@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    int i,n;
+    int i,n,digit;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
@@ -9,18 +9,16 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int sum=0;
     for(i=0;i<n;i++)
     {
-        for(int j=1;j<=arr[i]/2;j++)
+        int num=arr[i],sum=0;
+        while(num>0)
         {
-            sum=sum+arr[i];
+            digit=num%10;
+            sum=sum+digit;
+            num=num%10;
         }
-    }
-    
-    for(i=0;i<n;i++)
-    {
-        printf("%d",arr[i]);
+        printf("%d ",sum);
     }
     return 0;
 }
