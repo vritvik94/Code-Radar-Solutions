@@ -9,15 +9,23 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
+    int max=0,frequency;
     for(i=0;i<n;i++)
     {
-        for(j=i+1;j<n;j++)
+        int ctr=0;
+        for(j=0;j<n;j++)
         {
             if(arr[i]==arr[j])
             {
-                printf("%d",arr[i]);
+                ctr++;
             }
         }
+        if(ctr>max)
+        {
+            max=ctr;
+            frequency=arr[i];
+        }
     }
+    printf("%d",frequency);
     return 0;
 }
