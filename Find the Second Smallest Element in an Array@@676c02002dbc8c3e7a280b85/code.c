@@ -21,8 +21,10 @@ int main(){
 
     for(i=0;i<n;i++)
     {
-        if(min!=arr[i] && smin>arr[i])
-            printf("%d",smin);
+        if(arr[i]!=min && smin>arr[i])
+        {
+            smin=arr[i];
+        }
     }
     if(smin==INT_MIN)
         printf("-1");
