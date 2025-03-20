@@ -3,7 +3,7 @@
 int main(){
     int i,n;
     scanf("%d",&n);
-    int arr[n];
+    int arr[n],rsum[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
@@ -11,16 +11,13 @@ int main(){
 
     for(i=0;i<n;i++)
     {
-        for(int j=0;j<=i;j++)
-        {
-            sum=sum=arr[j];
-        }
+        sum=sum+arr[i];
+        rsum[i]=sum;
     }
 
     for(i=0;i<n;i++)
     {
-        printf("%d",arr[j]);
+        printf("%d",rsum[i]);
     }
     return 0;
 }
-
