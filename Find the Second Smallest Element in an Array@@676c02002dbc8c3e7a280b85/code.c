@@ -10,12 +10,12 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    min=INT_MIN;
-    smin=INT_MIN;
+    min=INT_MAX;
+    smin=INT_MAX;
 
     for(i=0;i<n;i++)
     {
-        if(min>arr[i])
+        if(arr[i]<min)
             min=arr[i];
     }
 
@@ -26,7 +26,7 @@ int main(){
             smin=arr[i];
         }
     }
-    if(smin==INT_MIN)
+    if(smin==INT_MAX)
         printf("-1");
     else
         printf("%d",smin);
