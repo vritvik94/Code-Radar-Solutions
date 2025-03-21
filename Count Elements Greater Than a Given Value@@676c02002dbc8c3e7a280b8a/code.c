@@ -13,8 +13,8 @@ int main(){
     {
         if(arr[i]>k)
             ctr++;
-    printf("%d",ctr);
     }
+    printf("%d",ctr);
     return 0;
 }
 
