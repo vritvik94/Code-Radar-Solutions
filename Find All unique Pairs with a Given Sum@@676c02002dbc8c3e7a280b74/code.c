@@ -28,10 +28,12 @@ int main(){
      {
         if (i > 0 && arr[i] == arr[i - 1]) 
             continue;
-        for (j = i + 1; j < n; j++) {
-            if (arr[i] + arr[j] == targetsum)
+        for (j = i + 1; j < n; j++) 
+        {
+            if (arr[i] + arr[j] > targetsum)
                 printf("%d %d\n", arr[i], arr[j]);
         }
     }
     return 0;
 }
+
