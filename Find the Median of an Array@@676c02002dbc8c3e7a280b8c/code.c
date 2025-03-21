@@ -11,7 +11,7 @@ int main(){
 
     for(i=0;i<n-1;i++)
     {
-        for(j=0;j<n-1-i;j++)
+        for(j=0;j<n-i-1;j++)
         {
             if(arr[j]>arr[j+1])
             {
@@ -22,7 +22,7 @@ int main(){
         }
     }
     if(n%2==1)
-        printf("%d",n);
+        printf("%d",arr[n/2]);
     else
         printf("%d",(arr[n/2-1]+arr[n/2]/2));
     return 0;
