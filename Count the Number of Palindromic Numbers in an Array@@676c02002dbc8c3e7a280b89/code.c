@@ -16,6 +16,6 @@ int main(){
             break;
     }
     if(isPallindrome)
-        printf("%d",isPallindrome)
+        printf("%d",isPallindrome);
     return 0;
 }
