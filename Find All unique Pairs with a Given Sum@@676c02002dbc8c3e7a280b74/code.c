@@ -18,7 +18,6 @@ int main(){
             if(arr[i]+arr[j] == targetsum)
                 printf("%d %d\n",arr[i],arr[j]);
         }
-        return 0;
      }
      return 0;
 }
