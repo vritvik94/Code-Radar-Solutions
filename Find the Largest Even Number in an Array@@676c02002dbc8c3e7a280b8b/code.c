@@ -10,7 +10,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int max=-1;
+    int max=INT_MIN;
 
     for(i=0;i<n;i++)
     {
@@ -20,5 +20,9 @@ int main(){
                 max=arr[i];
         }
     }
-    printf("%d",max);
+    if (max == -1)
+        printf("-1");
+    else
+        printf("%d", max);
+
 }
