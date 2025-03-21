@@ -28,7 +28,7 @@ int main(){
     {
         for(j=i+1;j<n;j++)
         {
-            if(i>0 && arr[i]=arr[i-1])
+            if(i>0 && arr[i]==arr[i-1])
                 continue;
             if(arr[i]+arr[j]==targetsum)
                 printf("%d %d",arr[i],arr[j]);
