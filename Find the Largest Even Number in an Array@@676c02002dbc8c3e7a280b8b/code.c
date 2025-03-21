@@ -17,9 +17,12 @@ int main(){
         if(arr[i]%2==0)
         {
             if(max<arr[i])
+            {
                 max=arr[i];
+                printf("%d",max);
+            }
         }
     }
-    printf("%d",max);
+    printf("-1");
     return 0;
 }
