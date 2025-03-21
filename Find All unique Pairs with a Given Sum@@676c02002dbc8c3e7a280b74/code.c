@@ -22,25 +22,16 @@ int main(){
                 arr[j+1]=temp;
             }
         }
-    }
+    }*/
 
      for(i=0;i<n;i++)
      {
         for(j=i+1;j<n;j++)
         {
             if(arr[i]+arr[j] == targetsum)
-                printf("%d %d\n",arr[i],arr[j]);
+                //printf("%d %d\n",arr[i],arr[j]);
         }
-     }*/
-     for (i = 0; i < n - 1; i++) {
-        if (i > 0 && arr[i] == arr[i - 1]) // Skip duplicate elements
-            continue;
-        for (j = i + 1; j < n; j++) {
-            if (arr[i] + arr[j] > targetsum) 
-                break; // Stop checking further
-            if (arr[i] + arr[j] == targetsum)
-                printf("%d %d\n", arr[i], arr[j]);
-        }
-    }
+        printf("%d %d\n",arr[i],arr[j]);
+     }
      return 0;
 }
