@@ -12,10 +12,8 @@ int main(){
     scanf("%d",&k);
 
     for(i=0;i<n;i++)
-    {
         if(arr[i]>k)
             ctr++;
-    }
     printf("%d",ctr);
     return 0;
 }
