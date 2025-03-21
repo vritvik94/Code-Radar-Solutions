@@ -30,8 +30,8 @@ int main(){
             continue;
         for (j = i + 1; j < n; j++) 
         {
-            if (j>0 && arr[j]==arr[j-1]) 
-                continue;
+            if (arr[i] + arr[j] > targetsum) 
+                break;
             if (arr[i] + arr[j] == targetsum)
                 printf("%d %d\n", arr[i], arr[j]);
         }
