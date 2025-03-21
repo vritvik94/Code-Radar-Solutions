@@ -18,7 +18,7 @@ int main(){
             sum=sum*10+digit;
             temp=temp/10;
         }
-        if(sum=arr[i])
+        if(sum==arr[i])
             ctr++;
     }
     printf("%d",ctr);
