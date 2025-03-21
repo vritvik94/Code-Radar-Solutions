@@ -3,7 +3,7 @@
 int main(){
     int i,n,k;
     scanf("%d",&n);
-    int arr[i];
+    int arr[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
@@ -12,9 +12,7 @@ int main(){
     scanf("%d",&k);
 
     for(i=0;i<n;i++)
-    {
         if(arr[i]>k)
             printf("%d",arr[i]);
-    }
     return 0;
 }
