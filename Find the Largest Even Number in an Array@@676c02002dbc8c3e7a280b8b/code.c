@@ -20,9 +20,8 @@ int main(){
                 max=arr[i];
         }
     }
-    if (!max)
+    if(max=INT_MIN)
         printf("-1");
     else
-        printf("%d", max);
-
+        printf("%d",max);
 }
