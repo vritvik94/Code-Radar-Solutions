@@ -1,4 +1,5 @@
 #include<stdio.h>
+#define MAX_SIZE 1000
 
 int main(){
     int i,n,k,ctr=0;
