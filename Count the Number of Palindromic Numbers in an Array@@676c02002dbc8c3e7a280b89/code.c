@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    int i,n,isPallindrome=1;
+    int i,n,ctr=0;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
@@ -9,15 +9,18 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    for(i=0;i<n/2;i++)
+    for(i=0;i<n;i++)
     {
-        if(arr[i]!=arr[n-1-i])
+        int temp=arr[i],sum=0,digit;
+        while(temp)
         {
-            isPallindrome=0;
-            break;
+            digit=temp%10;
+            sum=sum*10+digit;
+            temp=temp/10;
         }
+        if(sum=arr[i])
+            ctr++;
     }
-    if(isPallindrome)
-        printf("%d",isPallindrome);
+    printf("%d",ctr);
     return 0;
 }
