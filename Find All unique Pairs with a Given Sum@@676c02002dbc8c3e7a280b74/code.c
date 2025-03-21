@@ -24,16 +24,17 @@ int main(){
         }
     }
 
-     for (i = 0; i < n - 1; i++) 
-     {
+      for (i = 0; i < n - 1; i++) 
+      {
         if (i > 0 && arr[i] == arr[i - 1]) 
             continue;
         for (j = i + 1; j < n; j++) 
         {
-            if (arr[i] + arr[j] > targetsum)
+            if (arr[i] + arr[j] > targetsum) 
+                break;
+            if (arr[i] + arr[j] == targetsum)
                 printf("%d %d\n", arr[i], arr[j]);
         }
     }
     return 0;
 }
-
