@@ -31,7 +31,7 @@ int main(){
             if(i>0 && arr[i]==arr[i-1])
                 continue;
             if(arr[i]+arr[j]==targetsum)
-                printf("%d %d",arr[i],arr[j]);
+                printf("%d %d\n",arr[i],arr[j]);
         }
     }
     return 0;
