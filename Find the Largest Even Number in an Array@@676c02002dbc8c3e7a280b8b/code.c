@@ -20,7 +20,7 @@ int main(){
                 max=arr[i];
         }
     }
-    if (max == -1)
+    if (!max)
         printf("-1");
     else
         printf("%d", max);
