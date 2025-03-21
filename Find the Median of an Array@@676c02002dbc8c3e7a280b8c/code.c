@@ -24,6 +24,6 @@ int main(){
     if(n%2==1)
         printf("%d",arr[n/2]);
     else
-        printf("%d",(arr[n/2-1]+arr[n/2]/2));
+        printf("%d",(arr[n/2-1]+arr[n/2])/2);
     return 0;
 }
