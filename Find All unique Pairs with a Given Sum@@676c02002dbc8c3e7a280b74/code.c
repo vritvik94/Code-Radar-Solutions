@@ -16,10 +16,7 @@ int main(){
         for(j=i+1;j<n;j++)
         {
             if(arr[i]+arr[j] == targetsum)
-            {
                 printf("%d %d\n",arr[i],arr[j]);
-                return 0;
-            }
         }
      }
      return 0;
