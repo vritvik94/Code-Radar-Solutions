@@ -25,7 +25,6 @@
 
 void rotateArray(int arr[],int n,int k)
 {
-    k=k%n;
     int i;
     for(i=n-k;i<n;i++)
     {
