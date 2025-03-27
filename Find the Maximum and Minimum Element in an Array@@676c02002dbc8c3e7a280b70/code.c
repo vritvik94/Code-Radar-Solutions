@@ -6,7 +6,7 @@ void maxmin(int arr[],int n)
     int max=INT_MIN;
     int min=INT_MAX;
 
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
         if(max<arr[i])
         {
