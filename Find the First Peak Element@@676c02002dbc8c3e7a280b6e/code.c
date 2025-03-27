@@ -21,7 +21,7 @@ int main(){
     {
         scanf("%d",&arr[i]);
     }
-    int peak=firstPeak(arr,n);
+    int peak=firstPeak(arr,i);
     printf("%d\n",peak);
     return 0;
 }
