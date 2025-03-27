@@ -23,9 +23,10 @@
     return 0;
 }*/
 
-void rotateArray(int arr[],int n)
+void rotateArray(int arr[],int n,int k)
 {
-    int i,k;
+    k=k%n;
+    int i;
     for(i=n-k;i<n;i++)
     {
         printf("%d\n",arr[i]);
@@ -45,6 +46,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&k);
-    rotateArray(n);
+    rotateArray(arr,n,k);
     return 0;
 }
