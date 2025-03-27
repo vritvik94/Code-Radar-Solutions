@@ -5,7 +5,7 @@ int firstPeak(int arr[],int n)
     int i;
     for(i=0;i<n;i++)
     {
-        if((i==0 || arr[i]>arr[i-1]) && (i==n-1 || arr[i]<arr[i+1]))
+        if((i==0 || arr[i]>arr[i-1]) && (i==n-1 || arr[i]>arr[i+1]))
         {
             return arr[i];
         }
@@ -21,7 +21,7 @@ int main(){
     {
         scanf("%d",&arr[i]);
     }
-    int peak=firstPeak(arr,i);
+    int peak=firstPeak(arr,n);
     printf("%d\n",peak);
     return 0;
 }
