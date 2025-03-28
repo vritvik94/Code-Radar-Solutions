@@ -2,16 +2,14 @@
 
 int index(int arr[],int n,int t)
 {
-    int index;
     for(int i=0;i<n;i++)
     {
         if(arr[i]==t)
         {
-            index=t;
-            break;
+            return i;
         }
     }
-    return index;
+    return -1;
 }
 
 int main(){
@@ -23,7 +21,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&t);
-    if(index(n)!=-1)
+    int result=index(arr,n,t);
+    if(result!=-1)
         printf("%d",index);
     else
         printf("-1");
