@@ -6,7 +6,7 @@ int tindex(int arr[],int n,int t)
     {
         if(arr[i]==t)
         {
-            return arr[i];
+            return i;
         }
     }
     return -1;
