@@ -20,9 +20,9 @@ int secmax(int arr[],int n,int max)
         if(arr[i]!=max && arr[i]>smax)
             smax=arr[i];   
     }
-    //if(smax==INT_MIN)
-    //    return -1;
-    //else
+    if(smax==INT_MIN)
+        return -1;
+    else
         return smax;
 }
 
