@@ -24,7 +24,7 @@ int uniquePairs(int arr[],int n,int target)
         {
             if(arr[i]+arr[j]==target)
             {
-                printf("%d %d\n",arr[i],arr[j]);
+                printf("%d %d\n",arr[j],arr[i]);
             }
         }
     }
