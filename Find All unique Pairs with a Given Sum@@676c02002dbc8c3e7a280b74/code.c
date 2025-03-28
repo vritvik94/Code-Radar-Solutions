@@ -22,7 +22,7 @@ int uniquePairs(int arr[],int n,int target)
     {
         for(int j=i+1;j<n;j++)
         {
-            if(arr[i]+arr[j]==target);
+            if(arr[i]+arr[j]==target)
             {
                 printf("%d %d",arr[i],arr[j]);
             }
