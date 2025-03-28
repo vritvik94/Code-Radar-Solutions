@@ -34,7 +34,7 @@ int main()
         scanf("%d",&arr[i]);
     }
     sortArray(arr,n);
-    int median=medianArray(arr,n)
+    int median=medianArray(arr,n);
     printf("%d",median);
     return 0;
 }
