@@ -31,7 +31,7 @@ int uniquePairs(int arr[],int n,int target)
 }
 
 int main(){
-    int i,n;
+    int i,n,target;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
