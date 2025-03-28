@@ -13,7 +13,7 @@ int index(int arr[],int n,int t)
 }
 
 int main(){
-    int i,n,t,index;
+    int i,n,t;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
@@ -23,7 +23,7 @@ int main(){
     scanf("%d",&t);
     int result=index(arr,n,t);
     if(result!=-1)
-        printf("%d",index);
+        printf("%d",result);
     else
         printf("-1");
     return 0;
