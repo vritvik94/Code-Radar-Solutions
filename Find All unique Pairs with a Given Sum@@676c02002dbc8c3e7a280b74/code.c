@@ -4,8 +4,8 @@ int uniquePairs(int arr[],int n,int target)
 {
     for(int i=0;i<n;i++)
     {
-        if (i > 0 && arr[i] == arr[i - 1])
-            continue;
+        //if (i > 0 && arr[i] == arr[i - 1])
+        //    continue;
         for(int j=i+1;j<n;j++)
         {
             if(arr[i]+arr[j]==target)
