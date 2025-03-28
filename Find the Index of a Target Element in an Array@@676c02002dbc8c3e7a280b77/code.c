@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int index(int arr[],int n,int t)
+int tindex(int arr[],int n,int t)
 {
     for(int i=0;i<n;i++)
     {
@@ -21,7 +21,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&t);
-    int result=index(arr,n,t);
+    int result=tindex(arr,n,t);
     if(result!=-1)
         printf("%d",result);
     else
