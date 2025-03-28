@@ -38,6 +38,7 @@ int main(){
     {
         scanf("%d",&arr[i]);
     }
+    scanf("%d",&target);
     sortArray(arr,n);
     uniquePairs(arr,n,target);
     return 0;
