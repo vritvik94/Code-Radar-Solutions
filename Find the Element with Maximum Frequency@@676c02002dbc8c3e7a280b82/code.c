@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void maxFrequency(int arr[],int n)
+int maxFrequency(int arr[],int n)
 {
     int freq[1000]={0};
     int maxfreq=0,frequent=0;
