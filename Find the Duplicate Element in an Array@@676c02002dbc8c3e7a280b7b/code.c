@@ -2,20 +2,17 @@
 
 int duplicateElement(int arr[],int n)
 {
-   int freq[100] = {0}; 
-    int duplicateCount = 0;
+    int freq[100] = {0}; 
 
     for (int i = 0; i < n; i++) 
     {
-        freq[arr[i]]++;
-
-        if (freq[arr[i]] == 2) 
-        { 
-            duplicateCount++;
+        freq[arr[i]]++; 
+        if (freq[arr[i]] > 1) 
+        {
+            return arr[i]; 
         }
     }
-
-    return duplicateCount;
+    return -1;
 }
 
 int main(){
