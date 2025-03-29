@@ -25,10 +25,10 @@ void minDiff(int arr[],int n)
     int num1=arr[0],num2=arr[1];
     for(int i=0;i<n;i++)
     {
-        int diff = arr[i + 1] - arr[i];
-        if (diff < minDiff) 
+        int mindiff= arr[i + 1] - arr[i];
+        if (diff < mindiff) 
         {
-            minDiff = diff;
+            mindiff = diff;
             num1 = arr[i];
             num2 = arr[i + 1];
         }
