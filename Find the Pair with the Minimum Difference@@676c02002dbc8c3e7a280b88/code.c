@@ -19,7 +19,7 @@ void sortArray(int arr[],int n)
 void minDiff(int arr[],int n)
 {
     if(n==1)
-        return -1;
+        printf("-1");
     sortArray(arr,n);
     int min=arr[1]-arr[0];
     int num1=arr[0],int num2=arr[1];
