@@ -26,7 +26,7 @@ void minDiff(int arr[],int n)
     for(int i=0;i<n;i++)
     {
         int diff= arr[i + 1] - arr[i];
-        if (diff < mindiff) 
+        if (diff < minDiff) 
         {
             mindiff = diff;
             num1 = arr[i];
