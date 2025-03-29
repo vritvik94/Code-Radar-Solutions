@@ -22,7 +22,7 @@ void minDiff(int arr[],int n)
         printf("-1");
     sortArray(arr,n);
     int min=arr[1]-arr[0];
-    int num1=arr[0],int num2=arr[1];
+    int num1=arr[0],num2=arr[1];
     for(i=0;i<n;i++)
     {
         int diff = arr[i + 1] - arr[i];
