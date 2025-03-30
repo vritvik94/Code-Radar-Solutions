@@ -3,7 +3,7 @@
 int isSorted(int arr[], int n) 
 {
     int inc = 1, dec = 1;
-    for (int i = 0; i < n; i++) 
+    for (int i = 1; i < n; i++) 
     {
         if (arr[i] > arr[i - 1])
             dec = 0;
