@@ -15,6 +15,7 @@ int sorted(int arr[],int n)
             }
         }
     }
+    return 0;
 }
 
 int main()
