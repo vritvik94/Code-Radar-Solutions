@@ -1,30 +1,38 @@
 #include<stdio.h>
 
-int main(){
-    int i,n,j=0;
-    scanf("%d",&n);
-    int arr[n];
-    for(i=0;i<n;i++)
+void moveZerosToEnd(int arr[], int n) {
+    int j = 0;
+    for (int i = 0; i < n; i++) 
     {
-        scanf("%d",&arr[i]);
-    }
-
-    for(i=0;i<n;i++)
-    {
-        if(arr[i]!=0)
-        {
-            arr[j++]=arr[i];
+        if (arr[i] != 0) {
+            arr[j++] = arr[i];
         }
     }
-    while(j<n)
+    while (j < n) 
     {
-        arr[j++]=0;
+        arr[j++] = 0;
     }
+}
 
-    for(i=0;i<n;i++)
+void printArray(int arr[], int n) 
+{
+    for (int i = 0; i < n; i++) 
     {
-        printf("%d ",arr[i]);
+        printf("%d ", arr[i]);
     }
+    printf("\n");
+}
 
+int main() 
+{
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) 
+    {
+        scanf("%d", &arr[i]);
+    }
+    moveZerosToEnd(arr, n);
+    printArray(arr, n);    
     return 0;
 }
