@@ -2,15 +2,19 @@
 
 int sorted(int arr[],int n)
 {
-    int ctr=0,i;
+    int i,j;
     for(i=0;i<n-1;i++)
     {
-        if(arr[i]>arr[i+1])
+        for(j=0;j<n-i-1;j++)
         {
-            return 0;
+            if(arr[j]>arr[j+1])
+            {
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
         }
     }
-    return 1;
 }
 
 int main()
