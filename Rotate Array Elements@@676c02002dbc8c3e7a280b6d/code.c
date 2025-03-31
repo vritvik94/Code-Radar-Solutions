@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*int main(){
+int main(){
     int i,n,k;
     scanf("%d",&n);
     int arr[n],temp[n];
@@ -21,7 +21,7 @@
         printf("%d\n", arr[i]);
     }
     return 0;
-}*/
+}
 
 void rotateArray(int arr[],int n,int k)
 {
