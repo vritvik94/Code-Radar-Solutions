@@ -1,11 +1,11 @@
 #include<stdio.h>
 
-void bubleSort(int arr[],int n)
+void bubleSort(int arr[],int size)
 {
     int i,j;
-    for(i=0;i<n-1;i++)
+    for(i=0;i<size-1;i++)
     {
-        for(j=0;j<n-i-1;j++)
+        for(j=0;j<size-i-1;j++)
         {
             if(arr[j]>arr[j+1])
             {
@@ -21,7 +21,7 @@ int longestConsecutive(int arr[],int size)
 {
     if(size==0) return 0;
 
-    bubleSort(arr,n);
+    bubleSort(arr,size);
     int max=1,count=1;
 
     for(int i=1;i<size;i++)
