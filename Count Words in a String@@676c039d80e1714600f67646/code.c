@@ -16,7 +16,7 @@ int countWords(char str[])
 
 int main(){
     char str[100];
-    scanf("%s",&str);
+    fgets(str, sizeof(str), stdin);
     int result=countWords(str);
     printf("%d",result);
     return 0;
