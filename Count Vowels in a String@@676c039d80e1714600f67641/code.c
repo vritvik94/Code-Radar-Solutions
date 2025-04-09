@@ -7,9 +7,11 @@ int countVowels(char str[])
     {
         char ch=str[i];
         if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+        {
             count ++;
+        }
+        i++;
     }
-    i++;
     return count;
 }
 
