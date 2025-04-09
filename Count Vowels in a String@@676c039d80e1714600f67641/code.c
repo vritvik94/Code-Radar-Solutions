@@ -18,6 +18,7 @@ int countVowels(char str[])
 int main(){
     char str[100];
     scanf("%s",&str);
-    countVowels(str);
+    int result=countVowels(str);
+    printf("%d",result);
     return 0;
 }
