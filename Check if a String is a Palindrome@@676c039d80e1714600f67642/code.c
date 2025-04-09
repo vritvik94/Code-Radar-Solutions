@@ -1,25 +1,23 @@
 #include <stdio.h>
 
-int getLength(char str[])
-{
+int getLength(char str[]) {
     int len=0;
-    while(str(len)!='\0' && str(len)!='\n')
+    while(str[len]!='\0' && str[len]!='\n') 
     {
         len++;
     }
     return len;
 }
 
-void isPallindrome(char str[])
+int isPalindrome(char str[]) 
 {
     int start=0;
     int end=getLength(str)-1;
-    
-    while(start<end)
+    while (start<end) 
     {
-        if(str[start]!=str[end])
+        if (str[start]!=str[end]) 
         {
-            return 0;
+            return 0;  
         }
         start++;
         end--;
@@ -27,10 +25,10 @@ void isPallindrome(char str[])
     return 1;
 }
 
-int main(){
+int main() {
     char str[100];
-    scanf("%s",str);
-    if(isPallindrome(str))
+    scanf("%s", str);
+    if (isPalindrome(str))
         printf("Yes");
     else
         printf("No");
