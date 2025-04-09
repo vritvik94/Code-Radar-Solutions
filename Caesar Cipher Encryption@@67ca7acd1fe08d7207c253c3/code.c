@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void caesarEncrypt(char str[], int key) {
+void caesarCipher(char str[], int key) {
     int i = 0;
     char ch;
 
