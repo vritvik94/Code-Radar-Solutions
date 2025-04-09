@@ -2,7 +2,7 @@
 
 int countVowels(char str[])
 {
-    int count=0;i=0;
+    int count=0,i=0;
     while(str[i]!='\0')
     {
         char ch=str[i];
