@@ -19,7 +19,7 @@ void bubleSort(int arr[],int n)
 
 int longestConsecutive(int arr[],int n)
 {
-    if(size==0) continue;
+    if(n==0) continue;
 
     bubleSort(arr,n);
     int max=1,count=1;
