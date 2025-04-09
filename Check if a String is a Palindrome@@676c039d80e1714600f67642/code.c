@@ -1,20 +1,38 @@
 #include <stdio.h>
 
-int main(){
-    char a[20];
-    int l,i,j;
-    gets(a);
-    for(l=0;a[l]='\0',l++);
-    j=l-1;
-    for(i=0;i<l/2;i++)
+int getLength(char str[])
+{
+    int len=0;
+    while(str(len)!='\0' && str(len)!='\n')
     {
-        if(a[i]!=a[j])
+        len++;
+    }
+    return len;
+}
+
+void isPallindrome(char str[])
+{
+    int start=0;
+    int end=getLength(str)-1;
+    
+    while(start<end)
+    {
+        if(str[start]!=str[end])
         {
-            printf("No");
             return 0;
         }
-        j--;
+        start++;
+        end--;
     }
-    printf("Yes");
+    return 1;
+}
+
+int main(){
+    char str[100];
+    scanf("%s",str);
+    if(isPallindrome(str))
+        printf("Yes");
+    else
+        printf("No");
     return 0;
 }
