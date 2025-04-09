@@ -2,18 +2,18 @@
 
 void printLeader(int arr[], int n) 
 {
-    int leaders[100],count=0;
+    int leaders[100],ctr=0;
     int lmax=arr[n-1];
-    leaders[count++]=lmax;
+    leaders[ctr++]=lmax;
 
     for (int i=n-2;i>=0;i--) 
     {
         if (arr[i]>=lmax) {
             lmax=arr[i];
-            leaders[count++]=lmax;
+            leaders[ctr++]=lmax;
         }
     }
-    for (int i=count-1;i>=0;i--)
+    for (int i=ctr-1;i>=0;i--)
      {
         printf("%d ",leaders[i]);
     }
