@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int countVowels(str[])
+int countVowels(char str[])
 {
     int count=0;i=0;
     while(str[i]!='\0')
