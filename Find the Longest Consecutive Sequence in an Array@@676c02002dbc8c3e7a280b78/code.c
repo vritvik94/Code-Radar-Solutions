@@ -17,14 +17,14 @@ void bubleSort(int arr[],int n)
     }
 }
 
-int longestConsecutive(int arr[],int n)
+int longestConsecutive(int arr[],int size)
 {
-    if(n==0) continue;
+    if(size==0) continue;
 
     bubleSort(arr,n);
     int max=1,count=1;
 
-    for(int i=1;i<n;i++)
+    for(int i=1;i<size;i++)
     {
         if(arr[i]==arr[i-1]) continue;
         if(arr[i]==arr[i-1]+1)
