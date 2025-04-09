@@ -8,7 +8,7 @@ void printLeader(int arr[],int n)
     {
         if(arr[i]>lmax)
         {
-            printf("%d",arr[i]);
+            printf("%d ",arr[n-1]);
             lmax=arr[i];
         }
     }
