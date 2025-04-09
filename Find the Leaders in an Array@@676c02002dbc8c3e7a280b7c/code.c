@@ -20,9 +20,9 @@ int main()
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
-    [
+    {
         scanf("%d",&arr[i]);
-    ]
+    }
     printLeader(arr,n);
     return 0;
 }
